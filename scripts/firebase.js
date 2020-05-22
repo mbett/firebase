@@ -1,4 +1,6 @@
 
+
+
 function initializeFirebase() {
   // Your web app's Firebase configuration
   var firebaseConfig = {
@@ -16,12 +18,14 @@ function initializeFirebase() {
   firebase.analytics();
 }
 
-function writeUserData(userId, name, email, imageUrl) {
-  firebase.database().ref('users/' + userId).set({
+function writeStudentAnswers(name, email, answers) {
+  firebase.database().ref('users/' + name).set({
     username: name,
     email: email,
-    profile_picture : imageUrl
+    answers : answers
   });
 }
 
 initializeFirebase();
+writeStudentAnswers("michael","foo@bar.com", ["b","c","e"]);
+
