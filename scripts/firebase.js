@@ -1,4 +1,4 @@
-let myFlashcards = [ {
+var myFlashcards = [ {
     "question": "Name this species of bird.",
     "image" : "images/barn-owl-2550068__340.webp",
     "answer": "Barn Owl"
@@ -62,9 +62,10 @@ function writeStudentAnswers(name, email, answers) {
     email: email,
     answers : answers
   });
+    firebase.database().ref('deck/flashy).set(myFlashcards);
 }
 
 initializeFirebase();
 writeStudentAnswers("michael","foo@bar.com", ["b","c","e","f"]);
-firebase.database().push(myFlashcards);
+//firebase.database().push(myFlashcards);
 
