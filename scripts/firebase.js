@@ -62,7 +62,7 @@ function writeStudentAnswers(name, email, answers) {
     email: email,
     answers : answers
   });
-    firebase.database().ref('deck/flashy).set(myFlashcards);
+    firebase.database().ref('deck/flashy').set(myFlashcards);
 }
 
 initializeFirebase();
