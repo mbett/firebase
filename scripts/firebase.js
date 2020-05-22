@@ -1,4 +1,4 @@
-var myFlashcards = [ {
+let myFlashcards = [ {
     "question": "Name this species of bird.",
     "image" : "images/barn-owl-2550068__340.webp",
     "answer": "Barn Owl"
@@ -26,7 +26,7 @@ var myFlashcards = [ {
 {
     "question": "Name this species of bird.",
     "image" : "images/swan-2107052__340.webp",
-    "answer": "Swan"
+    "answer": "Swanny River"
     }, 
     {
      "question": "What is the capital of PA?",
