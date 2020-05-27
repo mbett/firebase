@@ -63,7 +63,7 @@ function writeStudentAnswers(name, email, answers) {
 
 initializeFirebase();
 writeStudentAnswers("michael","foo@bar.com", ["b","c","e","f"]);
-firebase.database().push(myFlashcards);
+//firebase.database().push(myFlashcards);
 
 let fc = firebase.database().ref('myFlashcards');
 console.log('Output: ' + fc.toJSON());
