@@ -31,10 +31,6 @@ let myFlashcards = [ {
     {
      "question": "What is the capital of PA?",
      "answer": "Harrisburg"
-     },
-     {
-     "question": "17*4",
-     "answer": 68
      }
      ];
 
