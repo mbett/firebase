@@ -1,7 +1,7 @@
 let myFlashcards = [ {
     "question": "Name this species of bird.",
     "image" : "images/barn-owl-2550068__340.webp",
-    "answer": "Barn Owl"
+    "answer": "Owl full of Barn"
     }, 
     {
     "question": "Name this species of bird.",
@@ -67,5 +67,5 @@ function writeStudentAnswers(name, email, answers) {
 
 initializeFirebase();
 writeStudentAnswers("michael","foo@bar.com", ["b","c","e","f"]);
-//firebase.database().push(myFlashcards);
+firebase.database().push(myFlashcards);
 
