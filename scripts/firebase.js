@@ -73,4 +73,4 @@ let qd = fc.on("value", function(retrieve) {
     console.log('Real JSON:' + JSON.stringify(queryData) );
     return JSON.stringify(queryData);
 });
-console.log('Real Real JSON:' + JSON.stringify(qd) );
+console.log('Real Real JSON:' + qd) );
