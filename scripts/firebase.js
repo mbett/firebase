@@ -68,7 +68,7 @@ let fc = firebase.database().ref('deck/flashy');
 console.log('Output: ' + fc.toString() );
 console.log('JSON: ' + fc.toJSON() );
 
-var qd;
+let qd;
 fc.on("value", function(retrieve) {
     let queryData = retrieve.val();
     console.log('Real JSON:' + JSON.stringify(queryData) );
