@@ -68,9 +68,9 @@ let fc = firebase.database().ref('deck/flashy');
 console.log('Output: ' + fc.toString() );
 console.log('JSON: ' + fc.toJSON() );
 
-fc.on("value", function(snapshot) {
-    var childData = snapshot.val();
-    console.log('Real JSON:' + JSON.stringify(childData) );
-//    var key = Object.keys(childData)[0];    //this will return 1st key.         
-//   console.log(childData[key].id);
+let qd = fc.on("value", function(retrieve) {
+    let queryData = retrieve.val();
+    console.log('Real JSON:' + JSON.stringify(queryData) );
+    return JSON.stringify(queryData);
 });
+console.log('Real Real JSON:' + JSON.stringify(qd) );
