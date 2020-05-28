@@ -67,3 +67,10 @@ writeStudentAnswers("michael","foo@bar.com", ["b","c","e","f"]);
 let fc = firebase.database().ref('deck/flashy');
 console.log('Output: ' + fc.toString() );
 console.log('JSON: ' + fc.toJSON() );
+
+fc.on("value", function(snapshot) {
+    var childData = snapshot.val();
+    console.log('Real JSON:' + JSON.stringify(childData) );
+//    var key = Object.keys(childData)[0];    //this will return 1st key.         
+//   console.log(childData[key].id);
+});
