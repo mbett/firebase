@@ -63,6 +63,7 @@ function writeStudentAnswers(name, email, answers) {
 
 initializeFirebase();
 writeStudentAnswers("michael","foo@bar.com", ["b","c","e","f"]);
+writeStudentAnswers("jennifer","third@floor.com", ["45","Gettysburg address","Windows 11","french fries"]);
 
 let fc = firebase.database().ref('deck/flashy');
 console.log('Output: ' + fc.toString() );
