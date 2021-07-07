@@ -1,5 +1,5 @@
 let myFlashcards = [ {
-    "question": "Name this species of bird.",
+    "question": "Name this very species of bird.",
     "image" : "images/barn-owl-2550068__340.webp",
     "answer": "Owl of Barn"
     }, 
@@ -58,7 +58,8 @@ function writeStudentAnswers(name, email, answers) {
     email: email,
     answers : answers
   });
-    firebase.database().ref('deck/flashy').set(myFlashcards);
+  let dbLocation = firebase.database().ref('deck/flashy')
+  dbLocation.set(myFlashcards);
 }
 
 initializeFirebase();
